@@ -1,5 +1,5 @@
 # Changelog
-
+ 
 All notable changes to Gogs are documented in this file.
 
 ## 0.14.0+dev (`main`)
