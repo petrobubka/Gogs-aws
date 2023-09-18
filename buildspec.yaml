@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - go version
+  build:
+    commands:
+      - go build -o gogs
+  post_build:
+    commands:
+      - go test -v -cover ./...
+artifacts:
+  files:
+    - '**/*'
+  name: $CODEBUILD_BUILD_NUMBER
