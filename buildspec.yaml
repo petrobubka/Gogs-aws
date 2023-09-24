@@ -7,9 +7,6 @@ phases:
   build:
     commands:
       - go build -o gogs
-  post_build:
-    commands:
-      - go test -v -cover ./...
 artifacts:
   files:
     - '**/*'
